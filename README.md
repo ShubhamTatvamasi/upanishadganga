@@ -35,3 +35,8 @@ kubectl patch svc upanishadganga \
 kubectl patch svc upanishadganga \
   --patch='{"spec": {"ports": [{"nodePort": 30080, "port": 80}]}}'
 ```
+
+update the image
+```bash
+kubectl set image po upanishadganga upanishadganga=shubhamtatvamasi/upanishadganga:2.0.0
+```

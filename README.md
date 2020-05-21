@@ -1,5 +1,9 @@
 # upanishadganga
 
+[![Docker Image Version (latest semver)](https://img.shields.io/docker/v/shubhamtatvamasi/upanishadganga?sort=semver)](https://hub.docker.com/r/shubhamtatvamasi/upanishadganga)
+[![Docker Image Size (tag)](https://img.shields.io/docker/image-size/shubhamtatvamasi/upanishadganga/latest)](https://hub.docker.com/r/shubhamtatvamasi/upanishadganga)
+[![Docker Pulls](https://img.shields.io/docker/pulls/shubhamtatvamasi/upanishadganga)](https://hub.docker.com/r/shubhamtatvamasi/upanishadganga)
+
 build docker image
 ```bash
 docker build -t shubhamtatvamasi/upanishadganga .

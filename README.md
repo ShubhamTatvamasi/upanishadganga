@@ -19,3 +19,15 @@ push to dockerhub
 ```bash
 docker push shubhamtatvamasi/upanishadganga
 ```
+---
+
+deploy on kubernetes
+```bash
+kubectl run upanishadganga --image=shubhamtatvamasi/upanishadganga --restart=Never --port=80 --expose
+
+kubectl patch svc upanishadganga \
+  --patch='{"spec": {"type": "NodePort"}}'
+
+kubectl patch svc upanishadganga \
+  --patch='{"spec": {"ports": [{"nodePort": 30080, "port": 80}]}}'
+```

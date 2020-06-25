@@ -36,6 +36,11 @@ kubectl patch svc upanishadganga \
   --patch='{"spec": {"ports": [{"nodePort": 30080, "port": 80}]}}'
 ```
 
+delete deployment
+```bash
+kubectl delete pod/upanishadganga service/upanishadganga
+```
+
 update the image
 ```bash
 kubectl set image po upanishadganga upanishadganga=shubhamtatvamasi/upanishadganga:2.0.0
